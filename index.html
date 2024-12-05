@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -19,8 +19,24 @@
                 <h2>Pen: Magic Card</h2>
                 <h3>by Gayane Gasparyan</h3>
                 <p>
-                    In this pen the author has added a border using a linear gradient to
-                    give it the illusion of the border moving
+                    In this pen, the author has created a card-shaped element with
+                    a border that glows and spins around. If you hover on the card,
+                    it removes the spinning, glowing border and reveals text which 
+                    says "Magic Card". This effect is achieved by creating a linear 
+                    gradient and animating it so that it spins. They use @keyframes 
+                    to spin the border and @property to create a variable
+                    called --rotate, which can be controlled in @keyframes. In the 
+                    @property they set the syntax to be "&lt;angle&gt;" which makes it clear 
+                    that it only takes angle values/degrees. In the @keyframe,s, it 
+                    changes the value of the variable --rotate from 0deg to 360deg.
+                    Both ::before and ::after having a z-index of -1 to move the 
+                    gradient behind the card element. There also happens to be some 
+                    text underneath the card element which seems to disappear 
+                    when the text is hovered. In reality, it never disappears; it
+                    was showing up due to the colored glow of the border. Since 
+                    the text was permanently colored the same as the background. They 
+                    also use :root to setup two variables --card-height and --card-width
+                    which are used in making the glow effect. 
                 </p>
             </article>
             <section>
@@ -45,7 +61,7 @@
             </section>
             <aside>
                 <h2>Hello, I'm ...</h2>
-                <p>I'm Anthony Solis, nice to meet you.</p>
+                <p>I'm Anthony Solis, I'm currently a student at RVCC. It's so fun to learn web page development in IDMX 225 class.</p>
                 <p class="bye">I hoped you liked my Pen of the Week.</p>
             </aside>
         </main>
