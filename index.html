@@ -23,8 +23,9 @@
                     a border that glows and spins around. If you hover on the card,
                     it removes the spinning, glowing border and reveals text which 
                     says "Magic Card". This effect is achieved by creating a linear 
-                    gradient and animating it so that it spins. They use @keyframes 
-                    to spin the border and @property to create a variable
+                    gradient which is slightly bigger than the box, and moving that 
+                    box to the back. After that they animate it so that box spins. 
+                    They use @keyframes to spin the border and @property to create a variable
                     called --rotate, which can be controlled in @keyframes. In the 
                     @property they set the syntax to be "&lt;angle&gt;" which makes it clear 
                     that it only takes angle values/degrees. In the @keyframe,s, it 
